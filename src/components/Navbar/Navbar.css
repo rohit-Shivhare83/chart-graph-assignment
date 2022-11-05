@@ -1,0 +1,23 @@
+/* white e7f2f8
+blue 74bdcb
+orange ffa384
+light yellow #fdf8dd */
+
+.navbar {
+  background-color: #fdf8dd;
+  height: 3rem;
+  width: 100%;
+  color: #0e444f;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+}
+.logo {
+  font-size: 1.4rem;
+  color: #0e859d;
+}
+.navbar .chart {
+  color: #d37556;
+  font-size: 1.4rem;
+}
