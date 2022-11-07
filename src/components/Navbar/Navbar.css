@@ -1,4 +1,4 @@
-/* white e7f2f8
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap"); /* white e7f2f8
 blue 74bdcb
 orange ffa384
 light yellow #fdf8dd */
@@ -12,6 +12,7 @@ light yellow #fdf8dd */
   justify-content: left;
   text-align: center;
   align-items: center;
+  font-family: "Patua One", cursive;
 }
 .logo {
   font-size: 1.4rem;

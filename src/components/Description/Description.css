@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200;300;400;500;600;700&display=swap");
+
+.description {
+  align-items: left;
+}
+
+.desc-title {
+  color: #124a55;
+  /* border-bottom: 5px solid #d375568f; */
+  width: fit-content;
+}
+.desc-content {
+  color: #124a55;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  line-height: 1.3;
+}

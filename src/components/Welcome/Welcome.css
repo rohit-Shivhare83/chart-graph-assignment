@@ -1,8 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200;300;400;500;600;700&display=swap");
+
 /* white e7f2f8
+
 blue 74bdcb
 orange ffa384
 light yellow #fdf8dd */
 .welcome-png img {
-  height: 10rem !important;
-  width: 10rem;
+  height: 100%;
+  width: 100%;
+}
+.welcome {
+  display: grid;
+  /* z-index: 2; */
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.welcome-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5rem 0;
+  height: 100%;
+  max-width: fit-content;
+}
+.wel-title {
+  font-size: 3rem;
+  max-width: fit-content;
+  font-family: "Trispace", sans-serif;
+  font-weight: 600;
+  color: #124a55;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.wel-description {
+  max-width: max-content;
+  color: #124a55da;
+  font-family: "Trispace", sans-serif;
+  letter-spacing: -1px;
+  opacity: 0.9;
+  line-height: 1;
+  padding: 0.1rem 0;
+  font-weight: 400;
+}
+
+.welcome-png {
+  /* z-index: 1; */
+  height: 30rem;
+  width: max-content;
+}
+.wel-button {
+  padding: 1rem 0;
+  height: max-content;
+  width: max-content;
+}
+.wel-button button {
+  border: 3px solid #d37556;
+  background-color: #fdf8dd;
+  height: 3rem;
+  width: 12rem;
+  font-size: large;
+  font-family: "Trispace", sans-serif;
+  line-height: 1.2;
+  transition: 0.3s;
+  color: #124a55da;
+  letter-spacing: -2px;
+}
+.wel-button button:hover {
+  background-color: #d37556;
+  color: #fdf8dd;
+}
+.wel-button button a {
+  text-decoration: none;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.wel-button button a:hover {
+  color: #fdf8dd;
 }

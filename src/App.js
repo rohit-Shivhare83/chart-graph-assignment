@@ -1,10 +1,14 @@
-import "./App.css";
-// import Chart from "react-apexcharts";
-
 import React, { Component } from "react";
-// import ChartList from "./components/ChartList";
+
+import "./App.css";
+
+import ChartList from "./components/ChartList";
 import Navbar from "./components/Navbar/Navbar";
 import Welcome from "./components/Welcome/Welcome";
+import Description from "./components/Description/Description";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,29 +19,70 @@ class App extends Component {
           id: "apexchart-example",
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+          categories: [
+            "Instagram",
+            "Twitter",
+            "Facebook",
+            "Reddit",
+            "Telegram",
+            "Pinterest",
+            "Youtube",
+            "WhatsApp",
+            "WeChat",
+          ],
         },
       },
 
       series: [
         {
           name: "series-1",
-          data: [10, 40, 35, 50, 49, 60, 70, 91, 300],
+          data: [210, 250, 270, 100, 150, 140, 300, 250, 60],
         },
       ],
     };
   }
   render() {
     return (
-      <div className="whole-content">
-        <div className="navbar-app">
-          <Navbar />
-        </div>
-        <div className="welcome-app">
-          <Welcome />
-        </div>
-        {/* <ChartList options={this.state.options} series={this.state.series} /> */}
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="whole-content">
+                <div className="navbar-app">
+                  <Navbar />
+                </div>
+                <div className="welcome-app">
+                  <Welcome />
+                </div>
+                <div className="description-app">
+                  <Description />
+                </div>
+                <div className="footer-app">
+                  <Footer />
+                </div>
+              </div>
+            }
+          />
+          <Route
+            path="/ChartList"
+            element={
+              <div className="chart-list-app">
+                <div className="navbar-app">
+                  <Navbar />
+                </div>
+                <ChartList
+                  options={this.state.options}
+                  series={this.state.series}
+                />
+                <div className="footer-app">
+                  <Footer />
+                </div>
+              </div>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
