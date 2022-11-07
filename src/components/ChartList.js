@@ -17,7 +17,7 @@ const ChartList = (props) => {
           series={props.series}
           type="bar"
           width={800}
-          height={620}
+          height={520}
         />
       </div>
     </div>
